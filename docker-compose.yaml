@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  # datasette:
+  #   image: datasetteproject/datasette
+  #   ports:
+  #     - 8001:8001
+  #   volumes:
+  #     - ./:/mnt/
+  #   command: datasette -p 8001 -h 0.0.0.0 /mnt/fixtures.db --load-extension=spatialite --root
+  neo:
+    image: neo4j
+    ports:
+      - 7474:7474
+      - 7687:7687
